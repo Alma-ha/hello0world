@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alili-automobile</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="images/avatar.jfif" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              <nav class="container-fluid" style="width: 100%; padding-right: 15px; margin: 0px;">
+                <nav class="MainDiv">
+                    <div id="panelLanguageSelection">
+                        <div style="padding: 8px; text-align: right;">
+                        "
+                        Language 
+                        "
+                        <nav class="container-fluid" style=" width: 100%; padding-right: 15px; margin: 0px;">
+                            <nav class="MainDiv">
+                                <div id="panelLanguageSelection">
+                        
+                                    <div style="padding: 8px; text-align: right">
+                                        Language
+                                            <select name="ctl00$ddlLanguages" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ddlLanguages\',\'\')', 0)" id="ddlLanguages">
+                            <option value="de-DE">Deutsch</option>
+                            <option selected="selected" value="en-GB">English</option>
+                            <option value="es-ES">Espagnolo</option>
+                            <option value="fr-BE">Français</option>
+                            <option value="it-IT">Italiano</option>
+                            <option value="nl-BE">Nederlands</option>
+                    
+                        </select>
+                                    </div>
+                                
+                    </div>
+                                <nav class="HeaderDiv"> 
+                                    <div id="panelHideAddressBar">
+                        
+                                        </div>
+                                        <table width="100%" style="background-color: transparent;">
+                                        <tbody>
+                                            <tr>
+                                            <td colspan="2">
+                                                <div class="visible-xs" style="text-align: right;">
+                                                    <span id="lblBrandsMobile"></span>
+                                                </div>
+                                                <div class="hidden-xs" style="text-align: right;">
+                                                    <span id="lblBrands"></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" valign="top" nowrap="nowrap">
+                                                <div class="hidden-xs">
+                                        <a id="lnkLogoCompanyName" href="/engb/home.aspx">
+                                            <span id="lblLogoText" class="Logo">
+                                                <h3>Alili Automobile</h3>
+                                            </span>
+                                        </a>
+                                             </div>
+                                                <div class="visible-xs">
+                                                    <a id="lnkLogoCompanyName2" href="../#">
+                                                        <span id="lblLogoText2" class="LogoHeightSmall">
+                                                            <h5>Alili Automobile</h5>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" align="right" class="HeaderText">
+                                                <div class="visible-xs" style="font-size: 10px;">
+                                                    Rue sauvenière 10, 4530 Villes-Le-Bouillet, Belgium&nbsp;&nbsp;&nbsp;
+                                                        <div class="visible-xs" style="height: 4px;"></div>
+                                                        <a class="HeaderText" style="text-decoration: none;" href="tel:32/495/939205">
+                                                            <span class="HeaderText" style="text-decoration: none; font-size: 10px;">
+                                                                <i class="fa fa-fw fa-phone">
+
+                                                                </i> 
+                                                                32/495/939205
+                                                            </span>
+                                                        </a>
+                                                        &nbsp;
+                                                </div> 
+                                                <div class="hidden-xs">
+                                                   Rue sauvenière 10, 4530 Villes-Le-Bouillet, Belgium&nbsp;&nbsp;&nbsp;
+                                                        <div class="visible-xs" style="height: 4px;"></div>
+                                                        <a class="HeaderText" style="text-decoration: none;" href="tel:32/495/939205">
+                                                            <span class="HeaderText" style="text-decoration: none;">
+                                                                <i class="fa fa-fw fa-phone"></i>
+                                                                 32/495/939205
+                                                                </span>
+                                                            </a>
+                                                            &nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        
+                    
+                                        </tbody>
+                                        </table>
+                                </nav>
+                           
+                     
+                        <nav class="MainDiv">
+                           <nav class="ContentStyle">
+                                <nav class="ContentDiv">
+                                    
+                        <div class="hidden-xs">
+                        <div class="PageTitle">
+                            <i class="fa fa-fw fa-home"></i>
+                             <span id="ContentPlaceHolderPageTitle_lblPageTitle">Welcome on our website</span>
+                            </div>
+                        </div>
+                         </nav>
+                             <nav style="height: 4px;"></nav>
+                            <div style="height: 10px;"></div>
+                             
+                        <div id="ContentPlaceHolder1_home1_panelWithHours">
+                        
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                           
+                                    <div id="ContentPlaceHolder1_home1_searchmask1_upmain">
+                            
+                                    <div id="ContentPlaceHolder1_home1_searchmask1_panelCarAds">
+                                
+                                        <div class="InfoItem">
+                                            <div class="InfoItemTitle">
+                                                <i class="fa fa-fw fa-car">
+
+                                                </i> 
+                                                <span id="ContentPlaceHolder1_home1_searchmask1_lblCarAdsTitle">Seach our stock</span>
+                                            </div>
+                                                <div class="InfoItemContent" style="padding: 4px">
+                                                        <table style="width: 100%;">
+                                                            <tbody>
+                                                                <tr>
+                                                                <td style="width: 50%; padding: 2px;">
+                                                                    <span id="ContentPlaceHolder1_home1_searchmask1_lblCarAdsMake">Brand</span>
+                                                                </td>
+                                                                <td style="width: 50%; padding: 2px;">
+                                                                    <span id="ContentPlaceHolder1_home1_searchmask1_lblCarAdsModel">Model</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding: 2px;">
+                                                                    <select name="ctl00$ContentPlaceHolder1$home1$searchmask1$ddlMake" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$home1$searchmask1$ddlMake\',\'\')', 0)" id="ContentPlaceHolder1_home1_searchmask1_ddlMake" class="formfield" style="width:100%;">
+                                    <option selected="selected" value="">All</option>
+                                    <option value="9">Audi</option>
+                                    <option value="13">BMW</option>
+                                    <option value="28">Fiat</option>
+                                    <option value="29">Ford</option>
+                                    <option value="14890">Lincoln</option>
+                                    <option value="47">Mercedes-Benz</option>
+                                    <option value="50">Mitsubishi</option>
+                                    <option value="54">Opel</option>
+                                    <option value="55">Peugeot</option>
+                                    <option value="57">Porsche</option>
+                                    <option value="64">SEAT</option>
+                                    <option value="65">Skoda</option>
+                                    <option value="74">Volkswagen</option>
+                                    <option value="73">Volvo</option>
+                    
+                                </select>
+                            </td>
+                                 <td style="padding: 2px;">
+                                    <select name="ctl00$ContentPlaceHolder1$home1$searchmask1$ddlModel" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$home1$searchmask1$ddlModel\',\'\')', 0)" id="ContentPlaceHolder1_home1_searchmask1_ddlModel" class="formfield" style="width:100%;">
+                                    <option selected="selected" value="">All</option>
+                    
+                                </select>
+                            </td>
+                          </tr>
+                         <tr>
+                             <td colspan="2" style="padding: 2px;"></td>
+                            </tr>
+                             <tr>
+                                <td style="padding: 2px;">
+                                    <span id="ContentPlaceHolder1_home1_searchmask1_lblCarAdsFirstRegistration">First registration</span>
+                                </td>
+                                   <td rowspan="2" style="padding: 2px; vertical-align: bottom; text-align: right;">
+                                    <input type="submit" name="ctl00$ContentPlaceHolder1$home1$searchmask1$btnSearch" value="33 Results" id="ContentPlaceHolder1_home1_searchmask1_btnSearch" class="CustButton">
+                                </td>
+                                 </tr>
+                                     <tr>
+                                         <td style="padding: 2px; vertical-align: top">
+                                            <select name="ctl00$ContentPlaceHolder1$home1$searchmask1$ddlfregfrom" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$home1$searchmask1$ddlfregfrom\',\'\')', 0)" id="ContentPlaceHolder1_home1_searchmask1_ddlfregfrom" class="formfield" style="width:100%;">
+                                    <option selected="selected" value="">From</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                    <option value="1999">1999</option>
+                                    <option value="1998">1998</option>
+                                    <option value="1997">1997</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+                                    <option value="1949">1949</option>
+                                    <option value="1948">1948</option>
+                                    <option value="1947">1947</option>
+                                    <option value="1946">1946</option>
+                                    <option value="1945">1945</option>
+                                    <option value="1944">1944</option>
+                                    <option value="1943">1943</option>
+                                    <option value="1942">1942</option>
+                                    <option value="1941">1941</option>
+                                    <option value="1940">1940</option>
+                                    <option value="1939">1939</option>
+                                    <option value="1938">1938</option>
+                                    <option value="1937">1937</option>
+                                    <option value="1936">1936</option>
+                                    <option value="1935">1935</option>
+                                    <option value="1934">1934</option>
+                                    <option value="1933">1933</option>
+                                    <option value="1932">1932</option>
+                                    <option value="1931">1931</option>
+                                    <option value="1930">1930</option>
+                                    <option value="1929">1929</option>
+                                    <option value="1928">1928</option>
+                                    <option value="1927">1927</option>
+                                    <option value="1926">1926</option>
+                                    <option value="1925">1925</option>
+                                    <option value="1924">1924</option>
+                                    <option value="1923">1923</option>
+                                    <option value="1922">1922</option>
+                                    <option value="1921">1921</option>
+                                    <option value="1920">1920</option>
+                                    <option value="1919">1919</option>
+                                    <option value="1918">1918</option>
+                                    <option value="1917">1917</option>
+                                    <option value="1916">1916</option>
+                                    <option value="1915">1915</option>
+                                    <option value="1914">1914</option>
+                                    <option value="1913">1913</option>
+                                    <option value="1912">1912</option>
+                                    <option value="1911">1911</option>
+                                    <option value="1910">1910</option>
+                                </select>
+                            </td>
+                         </tr>
+                        </tbody>
+                    </table>
+                 </div>
+                </div>
+             <br>                   
+                 </div>
+                </div>
+                 <br>
+                 </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                 <br>
+                </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div id="ContentPlaceHolder1_home1_openinghours1_panelOpeningHours" class="InfoItem">
+                        <div class="InfoItemTitle">
+                            <i class="fa fa-fw fa-file-powerpoint-o">
+                            </i> 
+                            <span id="ContentPlaceHolder1_home1_openinghours1_lblTitle">Opening Hours</span>
+                        </div>
+                        <div class="InfoItemContent" style="padding: 5px;">
+                            <div id="ContentPlaceHolder1_home1_openinghours1_panelMonday">
+                                
+                                </div>
+                                <div id="ContentPlaceHolder1_home1_openinghours1_panelTuesday">
+                                
+                                </div>
+                                <div id="ContentPlaceHolder1_home1_openinghours1_panelWednesday">
+                                
+                                </div>
+                                <div id="ContentPlaceHolder1_home1_openinghours1_panelThursday">
+                                
+                                </div>
+                                <div id="ContentPlaceHolder1_home1_openinghours1_panelFriday">
+                                
+                                </div>
+                                <div id="ContentPlaceHolder1_home1_openinghours1_panelSaturday">
+                                
+                                </div>
+                                <div id="ContentPlaceHolder1_home1_openinghours1_panelSunday">
+                                
+                                </div>
+                                <table style="width: 100%; max-width: 300px;">
+                                <tbody><tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblMonday">Monday</span></td>
+                                    <td class="InfoItemContent" style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblMondayHoursB">09:00</span></td>
+                                    <td class="InfoItemContent" style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblMondayHoursA">18:00</span></td>
+                                </tr>
+                                
+                            
+                                <tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblTuesday">Tuesday</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblTuesdayHoursB">09:00</span></td>
+                                     <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblTuesdayHoursA">18:00</span></td>
+                                </tr>
+                                
+                            
+                                <tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblWednesday">Wednesday</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblWednesdayHoursB">09:00</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblWednesdayHoursA">18:00</span></td>
+                                </tr>
+                                
+                            
+                                <tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblThursday">Thursday</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblThursdayHoursB">09:00</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblThursdayHoursA">18:00</span></td>
+                                </tr>
+                                
+                            
+                                <tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblFriday">Friday</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblFridayHoursB">09:00</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblFridayHoursA">18:00</span></td>
+                                </tr>
+                                
+                            
+                                <tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblSaturday">Saturday</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblSaturdayHoursB">10:00</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblSaturdayHoursA">18:00</span></td>
+                                </tr>
+                                
+                            
+                                <tr>
+                                    <td style="padding: 2px;"><span id="ContentPlaceHolder1_home1_openinghours1_lblSunday">Sunday</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblSundayHoursB">Sur -rendez</span></td>
+                                    <td style="padding: 2px; text-align: center;"><span id="ContentPlaceHolder1_home1_openinghours1_lblSundayHoursA">vous</span></td>
+                                </tr>
+                                
+                            
+                            </tbody></table>
+                        </div>
+                    
+                        </div>
+                            <br>
+                                    <br>
+                                </div>
+                                </div>
+                        
+                    </div>
+                        
+                    
+                    <div id="ContentPlaceHolder1_home1_carousel1_panelShowCarousel" class="row">
+                        
+                        <div class="col-md-12">
+                    <div class="InfoItem">
+                        <div class="InfoItemTitle"><span id="ContentPlaceHolder1_home1_carousel1_lblCarouselTitle"><i class="fa fa-fw fa-car"></i> Our latest arrivals</span></div>
+                        <div>   
+                            <div style="padding: 4px;">
+                                <link rel="stylesheet" href="/stylesheets/simpleslide.css" type="text/css">
+                                <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+                    
+                                <span id="ContentPlaceHolder1_home1_carousel1_lblCarousel"><div id="slide02" class="hidden-xs hidden-sm visible-md visible-lg" style="position: relative;">
+                    <div style="position: relative; overflow: hidden; height: 100%;"><div class="simple-slide-item-list" style="width: 400%;">
+                    <div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=46a3f3d8-98f6-444f-90e7-b3b90747a9a4';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/46a3f3d8-98f6-444f-90e7-b3b90747a9a4_4f6d9778-6d38-4e4f-b593-b1cc619b6a80.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>3008<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 16,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=da36b108-5e93-4794-8c24-4049aa6fa7cc';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/da36b108-5e93-4794-8c24-4049aa6fa7cc_c011ae5f-1410-4888-9c48-d46a4a7da6da.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Skoda</b><br>Yeti<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 13,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=bcea798a-cd47-4fc9-82de-197e58df7443';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/bcea798a-cd47-4fc9-82de-197e58df7443_b7b7ef16-5d33-4c18-b4da-1c6bb5e31bcc.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Fiat</b><br>500X<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=543db134-22ee-4125-a399-486f31776aa1';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/543db134-22ee-4125-a399-486f31776aa1_fa2773b7-c517-437a-980a-251e7da10af6.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>BMW</b><br>730<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 42,000.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=663af8d2-fa6a-4186-a5af-ca2870b0e88e';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/663af8d2-fa6a-4186-a5af-ca2870b0e88e_dab76588-851b-47b2-a73a-413ca4e0dd83.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>SEAT</b><br>Ibiza<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 7,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=a7ba9a0f-3f00-4b45-a9e9-4c07726b8642';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/a7ba9a0f-3f00-4b45-a9e9-4c07726b8642_aded8004-0230-49dd-bdd6-fe229db2ddcf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Ford</b><br>C-Max<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 6,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=15d0cc4c-84ff-4e41-a9e0-052f1474fc28';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/15d0cc4c-84ff-4e41-a9e0-052f1474fc28_f34e37e7-88ed-4e9d-a212-9a06c57ad508.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>SEAT</b><br>Altea<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 5,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=71d92c84-ec6a-44af-a870-1a88e34fc57d';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/71d92c84-ec6a-44af-a870-1a88e34fc57d_efdf0879-d50a-4e38-ba20-a3a42c002656.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>307<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 3,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=4a977be0-1299-4af4-89b3-f748f83fbc1a';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/4a977be0-1299-4af4-89b3-f748f83fbc1a_c8fd2e86-8897-4492-a078-868705399353.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>RS6<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 21,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=baad7b62-128c-4c7b-84cf-f28cdc2a039a';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/baad7b62-128c-4c7b-84cf-f28cdc2a039a_96148496-9f33-43fa-9e3b-2834966fff69.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>208<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 6,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=1a1cea1c-528b-4b76-990b-2a52e9c310c0';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/1a1cea1c-528b-4b76-990b-2a52e9c310c0_cd8da8b7-696b-4f96-ab4a-e4b9cb2affbe.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Mercedes-Benz</b><br>E 500<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 25,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=c4253ed3-43d8-492e-973f-5a6898f875cd';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/c4253ed3-43d8-492e-973f-5a6898f875cd_bb72bb2f-a381-4243-b04e-297585c3bfcf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Porsche</b><br>Cayenne<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 24,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=0ed52513-3fa5-4eb4-8c08-6ae71da90fc5';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/0ed52513-3fa5-4eb4-8c08-6ae71da90fc5_087a8804-8b8a-4fa9-afda-1ed744a45aeb.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>A5<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 18,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=138ac169-0d9a-4c87-a42a-cc41c4a47528';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/138ac169-0d9a-4c87-a42a-cc41c4a47528_96296743-71aa-4192-949a-266c71a080e4.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>RCZ<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 12,400.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=a1ffe2dc-25ed-4aff-a26d-552e8814bb24';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/a1ffe2dc-25ed-4aff-a26d-552e8814bb24_585d6b74-7fb9-4af2-a497-372cfd597f21.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Fiat</b><br>500X<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=50ca1583-270e-4c0e-a964-02f6b65fcf6e';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/50ca1583-270e-4c0e-a964-02f6b65fcf6e_b73aaf0d-38af-4b42-aef5-41ca43bd8125.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Volvo</b><br>V60<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,500.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=44409876-28dc-4d60-8df7-26b15f1d6efa';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/44409876-28dc-4d60-8df7-26b15f1d6efa_17b81c45-936a-4cce-bb12-d41f69343aaf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>A3<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=4f98616a-38dd-42bb-8a44-d04c838518d0';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/4f98616a-38dd-42bb-8a44-d04c838518d0_a2457666-8bf2-4aa6-9e5d-b535f120d226.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Ford</b><br>EcoSport<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 9,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=f8ab6ce0-8504-43b0-bc72-4791dcc9a233';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/f8ab6ce0-8504-43b0-bc72-4791dcc9a233_02baafca-226b-4b79-8e4b-38c388d0f3ed.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Volkswagen</b><br>Touran<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 9,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=14cda3b9-f39e-4a17-bcba-6ce9f04a955c';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/14cda3b9-f39e-4a17-bcba-6ce9f04a955c_f54f28eb-543d-4c18-adce-2b5f65a7206a.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>508<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 8,500.-</div></center></div></div></div></div><div class="simple-slide-prev-arrow" style="display: none;"></div><div class="simple-slide-next-arrow"></div></div><div class="hidden-xs visible-sm hidden-md hidden-lg" id="slide03" style="position: relative;"><div style="position: relative; overflow: hidden; height: 100%;"><div class="simple-slide-item-list" style="width: 500%;"><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=46a3f3d8-98f6-444f-90e7-b3b90747a9a4';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/46a3f3d8-98f6-444f-90e7-b3b90747a9a4_4f6d9778-6d38-4e4f-b593-b1cc619b6a80.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>3008<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 16,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=da36b108-5e93-4794-8c24-4049aa6fa7cc';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/da36b108-5e93-4794-8c24-4049aa6fa7cc_c011ae5f-1410-4888-9c48-d46a4a7da6da.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Skoda</b><br>Yeti<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 13,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=bcea798a-cd47-4fc9-82de-197e58df7443';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/bcea798a-cd47-4fc9-82de-197e58df7443_b7b7ef16-5d33-4c18-b4da-1c6bb5e31bcc.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Fiat</b><br>500X<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=543db134-22ee-4125-a399-486f31776aa1';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/543db134-22ee-4125-a399-486f31776aa1_fa2773b7-c517-437a-980a-251e7da10af6.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>BMW</b><br>730<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 42,000.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=663af8d2-fa6a-4186-a5af-ca2870b0e88e';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/663af8d2-fa6a-4186-a5af-ca2870b0e88e_dab76588-851b-47b2-a73a-413ca4e0dd83.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>SEAT</b><br>Ibiza<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 7,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=a7ba9a0f-3f00-4b45-a9e9-4c07726b8642';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/a7ba9a0f-3f00-4b45-a9e9-4c07726b8642_aded8004-0230-49dd-bdd6-fe229db2ddcf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Ford</b><br>C-Max<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 6,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=15d0cc4c-84ff-4e41-a9e0-052f1474fc28';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/15d0cc4c-84ff-4e41-a9e0-052f1474fc28_f34e37e7-88ed-4e9d-a212-9a06c57ad508.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>SEAT</b><br>Altea<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 5,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=71d92c84-ec6a-44af-a870-1a88e34fc57d';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/71d92c84-ec6a-44af-a870-1a88e34fc57d_efdf0879-d50a-4e38-ba20-a3a42c002656.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>307<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 3,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=4a977be0-1299-4af4-89b3-f748f83fbc1a';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/4a977be0-1299-4af4-89b3-f748f83fbc1a_c8fd2e86-8897-4492-a078-868705399353.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>RS6<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 21,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=baad7b62-128c-4c7b-84cf-f28cdc2a039a';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/baad7b62-128c-4c7b-84cf-f28cdc2a039a_96148496-9f33-43fa-9e3b-2834966fff69.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>208<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 6,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=1a1cea1c-528b-4b76-990b-2a52e9c310c0';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/1a1cea1c-528b-4b76-990b-2a52e9c310c0_cd8da8b7-696b-4f96-ab4a-e4b9cb2affbe.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Mercedes-Benz</b><br>E 500<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 25,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=c4253ed3-43d8-492e-973f-5a6898f875cd';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/c4253ed3-43d8-492e-973f-5a6898f875cd_bb72bb2f-a381-4243-b04e-297585c3bfcf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Porsche</b><br>Cayenne<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 24,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=0ed52513-3fa5-4eb4-8c08-6ae71da90fc5';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/0ed52513-3fa5-4eb4-8c08-6ae71da90fc5_087a8804-8b8a-4fa9-afda-1ed744a45aeb.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>A5<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 18,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=138ac169-0d9a-4c87-a42a-cc41c4a47528';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/138ac169-0d9a-4c87-a42a-cc41c4a47528_96296743-71aa-4192-949a-266c71a080e4.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>RCZ<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 12,400.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=a1ffe2dc-25ed-4aff-a26d-552e8814bb24';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/a1ffe2dc-25ed-4aff-a26d-552e8814bb24_585d6b74-7fb9-4af2-a497-372cfd597f21.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Fiat</b><br>500X<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=50ca1583-270e-4c0e-a964-02f6b65fcf6e';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/50ca1583-270e-4c0e-a964-02f6b65fcf6e_b73aaf0d-38af-4b42-aef5-41ca43bd8125.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Volvo</b><br>V60<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,500.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=44409876-28dc-4d60-8df7-26b15f1d6efa';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/44409876-28dc-4d60-8df7-26b15f1d6efa_17b81c45-936a-4cce-bb12-d41f69343aaf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>A3<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=4f98616a-38dd-42bb-8a44-d04c838518d0';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/4f98616a-38dd-42bb-8a44-d04c838518d0_a2457666-8bf2-4aa6-9e5d-b535f120d226.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Ford</b><br>EcoSport<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 9,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=f8ab6ce0-8504-43b0-bc72-4791dcc9a233';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/f8ab6ce0-8504-43b0-bc72-4791dcc9a233_02baafca-226b-4b79-8e4b-38c388d0f3ed.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Volkswagen</b><br>Touran<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 9,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=14cda3b9-f39e-4a17-bcba-6ce9f04a955c';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/14cda3b9-f39e-4a17-bcba-6ce9f04a955c_f54f28eb-543d-4c18-adce-2b5f65a7206a.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>508<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 8,500.-</div></center></div></div></div></div><div class="simple-slide-prev-arrow" style="display: none;"></div><div class="simple-slide-next-arrow"></div></div><div class="visible-xs hidden" id="slide04" style="position: relative;"><div style="position: relative; overflow: hidden; height: 100%;"><div class="simple-slide-item-list" style="width: 1000%;"><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=46a3f3d8-98f6-444f-90e7-b3b90747a9a4';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/46a3f3d8-98f6-444f-90e7-b3b90747a9a4_4f6d9778-6d38-4e4f-b593-b1cc619b6a80.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>3008<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 16,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=da36b108-5e93-4794-8c24-4049aa6fa7cc';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/da36b108-5e93-4794-8c24-4049aa6fa7cc_c011ae5f-1410-4888-9c48-d46a4a7da6da.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Skoda</b><br>Yeti<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 13,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=bcea798a-cd47-4fc9-82de-197e58df7443';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/bcea798a-cd47-4fc9-82de-197e58df7443_b7b7ef16-5d33-4c18-b4da-1c6bb5e31bcc.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Fiat</b><br>500X<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=543db134-22ee-4125-a399-486f31776aa1';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/543db134-22ee-4125-a399-486f31776aa1_fa2773b7-c517-437a-980a-251e7da10af6.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>BMW</b><br>730<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 42,000.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=663af8d2-fa6a-4186-a5af-ca2870b0e88e';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/663af8d2-fa6a-4186-a5af-ca2870b0e88e_dab76588-851b-47b2-a73a-413ca4e0dd83.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>SEAT</b><br>Ibiza<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 7,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=a7ba9a0f-3f00-4b45-a9e9-4c07726b8642';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/a7ba9a0f-3f00-4b45-a9e9-4c07726b8642_aded8004-0230-49dd-bdd6-fe229db2ddcf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Ford</b><br>C-Max<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 6,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=15d0cc4c-84ff-4e41-a9e0-052f1474fc28';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/15d0cc4c-84ff-4e41-a9e0-052f1474fc28_f34e37e7-88ed-4e9d-a212-9a06c57ad508.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>SEAT</b><br>Altea<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 5,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=71d92c84-ec6a-44af-a870-1a88e34fc57d';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/71d92c84-ec6a-44af-a870-1a88e34fc57d_efdf0879-d50a-4e38-ba20-a3a42c002656.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>307<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 3,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=4a977be0-1299-4af4-89b3-f748f83fbc1a';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/4a977be0-1299-4af4-89b3-f748f83fbc1a_c8fd2e86-8897-4492-a078-868705399353.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>RS6<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 21,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=baad7b62-128c-4c7b-84cf-f28cdc2a039a';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/baad7b62-128c-4c7b-84cf-f28cdc2a039a_96148496-9f33-43fa-9e3b-2834966fff69.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>208<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 6,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=1a1cea1c-528b-4b76-990b-2a52e9c310c0';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/1a1cea1c-528b-4b76-990b-2a52e9c310c0_cd8da8b7-696b-4f96-ab4a-e4b9cb2affbe.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Mercedes-Benz</b><br>E 500<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 25,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=c4253ed3-43d8-492e-973f-5a6898f875cd';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/c4253ed3-43d8-492e-973f-5a6898f875cd_bb72bb2f-a381-4243-b04e-297585c3bfcf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Porsche</b><br>Cayenne<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 24,999.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=0ed52513-3fa5-4eb4-8c08-6ae71da90fc5';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/0ed52513-3fa5-4eb4-8c08-6ae71da90fc5_087a8804-8b8a-4fa9-afda-1ed744a45aeb.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>A5<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 18,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=138ac169-0d9a-4c87-a42a-cc41c4a47528';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/138ac169-0d9a-4c87-a42a-cc41c4a47528_96296743-71aa-4192-949a-266c71a080e4.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>RCZ<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 12,400.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=a1ffe2dc-25ed-4aff-a26d-552e8814bb24';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/a1ffe2dc-25ed-4aff-a26d-552e8814bb24_585d6b74-7fb9-4af2-a497-372cfd597f21.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Fiat</b><br>500X<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,950.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=50ca1583-270e-4c0e-a964-02f6b65fcf6e';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/50ca1583-270e-4c0e-a964-02f6b65fcf6e_b73aaf0d-38af-4b42-aef5-41ca43bd8125.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Volvo</b><br>V60<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,500.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=44409876-28dc-4d60-8df7-26b15f1d6efa';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/44409876-28dc-4d60-8df7-26b15f1d6efa_17b81c45-936a-4cce-bb12-d41f69343aaf.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Audi</b><br>A3<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 10,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=4f98616a-38dd-42bb-8a44-d04c838518d0';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/4f98616a-38dd-42bb-8a44-d04c838518d0_a2457666-8bf2-4aa6-9e5d-b535f120d226.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Ford</b><br>EcoSport<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 9,800.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=f8ab6ce0-8504-43b0-bc72-4791dcc9a233';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/f8ab6ce0-8504-43b0-bc72-4791dcc9a233_02baafca-226b-4b79-8e4b-38c388d0f3ed.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Volkswagen</b><br>Touran<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 9,200.-</div></center></div></div><div style="padding: 4px; cursor: pointer;" onclick="javascript:location.href='/engb/Vehicle_Details.aspx?id=14cda3b9-f39e-4a17-bcba-6ce9f04a955c';"><div class="containerdiv"><img border="0" src="https://prod.pictures.autoscout24.net/listing-images/14cda3b9-f39e-4a17-bcba-6ce9f04a955c_f54f28eb-543d-4c18-adce-2b5f65a7206a.jpg/640x480.jpg" alt="" style="width: 100%; max-width: 214px; max-height: 160px;"><br><center><br><b>Peugeot</b><br>508<br><br><div class="InfoItemSubTitle" style="padding: 10px;">€ 8,500.-</div></center></div></div></div></div><div class="simple-slide-prev-arrow" style="display: none;"></div><div class="simple-slide-next-arrow"></div></div></span>                                      
+                                               
+                                <script type="text/javascript" src="/javascript/simpleslide.js"></script> 
+                                <script type="text/javascript">
+                                    $('#slide02').simpleSlide({ column: 5 })
+                                    $('#slide03').simpleSlide({ column: 4 })
+                                    $('#slide04').simpleSlide({ column: 2 })
+                                </script>
+                    
+                                <style type="text/css">
+                                    .carousel-inner .active.left { left: -33%; }
+                                    .carousel-inner .next        { left:  33%; }
+                                    .carousel-inner .prev        { left: -33%; }
+                                    .carousel-control.left,.carousel-control.right {}
+                                    .item:not(.prev) {visibility: visible;}
+                                    .item.right:not(.prev) {visibility: hidden;}
+                                    .rightest{ visibility: visible;}
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                    <br>
+                    
+                    </div>
+                    <br>
+                    <span id="ContentPlaceHolder1_home1_sections1_lblSections"><div class="row">
+                    <div class="col-xs-6 col-sm-3 col-md-3" style="padding-bottom: 10px; cursor: pointer;" onclick="location.href='/engb/Search_Cars.aspx?sid=1608&amp;culture=en-GB&amp;section=cars&amp;'"><div class="InfoItem"><div class="InfoItemTitle">Cars</div><img src="https://sites.autoscout24.be/DealerWebsImg//controls/img/default/homepage_cars.jpg" border="0" style="width: 100%"></div>&nbsp;</div><div class="col-xs-6 col-sm-3 col-md-3" style="padding-bottom: 10px; cursor: pointer;" onclick="location.href='/engb/Vehicle_Tradein.aspx?sid=1608&amp;culture=en-GB'"><div class="InfoItem"><div class="InfoItemTitle">Take Over</div><img src="https://sites.autoscout24.be/DealerWebsImg//controls/img/default/homepage_tradein.jpg" border="0" style="width: 100%"></div>&nbsp;</div><div class="col-xs-6 col-sm-3 col-md-3" style="padding-bottom: 10px; cursor: pointer;" onclick="location.href='/engb/contact.aspx?sid=1608&amp;culture=en-GB'"><div class="InfoItem"><div class="InfoItemTitle">Contact</div><img src="https://sites.autoscout24.be/DealerWebsImg//controls/img/default/homepage_contact.jpg" border="0" style="width: 100%"></div>&nbsp;</div></div></span>
+                    
+                    
+                                     </nav>
+                    </nav>
+                               <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                               <div style="background-color: #eaeaea; margin-right: 0px; padding-right: 0px; text-align: center;">
+                                 <div style="padding: 10px; font-size: 11px; color: black;">
+                                        <br><br>©2010-2021: AutoScout24: Alili Automobile (BE 0819.931.102) 
+                    
+                                        
+                                       
+                    
+                            <br>
+                            <br>
+                            <img src="/img/logonew.gif" height="34" alt="AutoScout24" title="AutoScout24"><br><br><a style="color: black;" href="/Manage/Default.aspx?sid=1608&amp;culture=en-GB" target="_blank"><span class="glyphicon glyphicon-lock"></span>
+                            </a>
+                            <br>
+                            &nbsp;
+                                   </div>
+                                </div>
+                            <script src="/controls/scripts/js/jquery.min.js"></script>
+                                <script src="/controls/scripts/js/bootstrap.min.js"></script>
+                                <script src="/controls/scripts/js/scripts.js"></script>
+                    </nav>
+                    </nav>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+    </div>
+</form>
+</div>
+</form>
+</div>
+<div class="header">
+ <div class="container">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-times-rectangle" id="cancel"></i>
+    </label>
+     <div class="sidebar">
+         <header>Menu</header>
+         <ul>
+            <li><a href="#"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <button onclick="document.getElementById('id01').style.display='block'">Contact</button>
+            <li><a href="#"><i class="fa fa-envelope"></i>Contact</a></li>
+            <li><a href="#"><i class="fa fa-link"></i>Shortcuts</a></li>
+            <li><a href="#"><i class="fa fa-street-view"></i>Overview</a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i>Events</a></li> 
+            <li><a href="#"><i class="fa fa-question-circle-o"></i>About</a></li>
+            <li><a href="#"><i class="fa fa-server"></i>Services</a></li>
+         </ul>
+     </div>
+     <section></section>
+        <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" width="125px"> 
+        </div>
+ 
+     
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"> </div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Find luxury cars with newer styles!</h1>
+            <p>Succes isn't always about greatnes.It's about consistency. Cinsistent <br>hard work gains succes. Greatness will come.</p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+        </div>
+        <div class="col-2">
+            <img src="images/bmw.i8.png">
+        </div>
+    </div>
+ </div>
+</div>
+
+ <!----------featured categories--------->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/porsche cayenne 4.8 turbo.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/porsche.cayenne.4.8 turbo.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/porsche-cayenne-4.8 turbo.jpg">
+            </div>
+    </div>
+    </div>
+</div>
+<!------------featured product--------->
+<div class="small-container">
+    <h2 class="title">Featured Product</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/audia3-1.4.jpg" style="width: 200px;height:150px;">
+            <h4> Audi A3</h4>
+            <P>€10.200,-</P>
+        </div>
+        <div class="col-4">
+            <img src="images/kiasportage2.0.jpg" style="width: 200px;height:150px;">
+            <h4> Kia Sportage</h4>
+            <P>€16.200,-</P>
+        </div>
+        <div class="col-4">
+            <img src="images/fordecosport1.5.jpg" style="width: 200px;height:150px;">
+            <h4> Ford EcoSport</h4> 
+            <P>€9.800,-</P>
+        </div>
+        <div class="col-4">
+            <img src="images/bmwx1.jpg" style="width: 200px;height:150px;">
+            <h4> BMW X1</h4>
+            <P>€12.950,-</P>
+        </div>
+    </div>
+    <h2 class="title">Latest Models</h2>
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <img src="images/bmwx6m.jpg" style="width: 200px;height:150px;">
+            <h4> BMW 730</h4>
+            <P>€35.000,-</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/peugeotRCZ2.0.jpg" style="width: 200px;height:150px;">
+            <h4> Peugeot RCZ2</h4>
+            <P>€12.500,-</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/bmwm4coupe.jpg" style="width: 200px;height:150px;">
+            <h4> BMW 730</h4> 
+            <P>€35.000,-</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/rangerover.jpg" style="width: 200px;height:150px;">
+            <h4> Rangerover</h4>
+            <P>€-----</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/volkswagen.jpg" style="width: 200px;height:150px;">
+            <h4> Volkswagen Touran</h4>
+            <P>€9.200,-</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/mitsubishi.jpg" style="width: 200px;height:150px;">
+            <h4> Mitsubishi ASX</h4>
+            <P>€7.500,-</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/bmw316.jpg" style="width: 200px;height:150px;">
+            <h4> BMW 316</h4>
+            <P>€9.450,-</P>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <img src="images/volvo.jpg" style="width: 200px;height:150px;">
+            <h4> Volvo V60</h4>
+            <P>€10.500,-</P>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: rgb(147, 146, 150) ; margin-right: 0px; padding-right: 0px; text-align: center;">
+    <div style="padding: 10px; font-size: 11px; color: rgb(5, 5, 5);"><br><br>
+           <br><br>©2010-2020: AutoScout24: Alili Automobile (BE 0819.931.102) 
+
+        
+    </div>
+    <div class="logo"><br><br><img src="images/logo2.png" height="34" alt="images/logo2" title="AutoScout24"><br><br></div>
+    <a style="color: black;" href="/Manage/Default.aspx?sid=1608&amp;culture=fr-BE" target="_blank">
+        <span><i class="fa fa-lock" aria-hidden="true"></i></span></a>
+      </div>
+   </div>
+</body>
+</html>
+
